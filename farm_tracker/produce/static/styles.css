@@ -1,0 +1,106 @@
+/* produce/static/produce/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(145, 250, 145), rgb(91, 194, 91));
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background: linear-gradient(to right, rgb(165, 236, 165), rgb(149, 240, 149));
+    padding: 20px;
+    height:700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form select, form button {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-block {
+    background-color: #bef1be; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+
+.form-block form {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+button {
+    background-color: #321170;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dd1ead;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.logout-button {
+    background-color: #f44336; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #321170;
+} 

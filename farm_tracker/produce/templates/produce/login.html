@@ -1,0 +1,19 @@
+<!-- produce/templates/produce/login.html -->
+{% load static %}
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a>.</p>
+    </div>
+</body>
+</html>

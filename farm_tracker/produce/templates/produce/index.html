@@ -1,0 +1,20 @@
+<!-- produce/templates/produce/index.html -->
+{% load static %}
+<html>
+<head>
+    <title>Farm Produce Tracker</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Farm Produce Tracker</h1>
+        <p>Track your crop yields and sales efficiently.</p>
+        
+        <nav>
+            <ul>Do you have an account? <a href="{% url 'login' %}">Login</a></ul>
+            <ul>Create an account <a href="{% url 'register' %}">Register</a></ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
